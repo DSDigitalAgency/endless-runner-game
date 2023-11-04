@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Endless Runner Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-name">Endless Runner Game - by DSDA</div>
+    <div class="start-screen">
+        <h1>Endless Runner Game</h1>
+        <p>Use Arrow Up and Arrow Down keys to move the player.</p>
+        <p>Press Arrow Up or Down key to start the game!</p>
+        <p>Allow audio to play on browser</p>
+    </div>
+    <div class="game-container">
+        <div class="player"></div>
+        <div class="enemy"></div>
+        <div class="score">Score: <span id="score-value">0</span></div>
+    </div>
+    <div class="game-over-screen">
+        <h1>Game Over!</h1>
+        <button id="restart-button">Restart</button>
+    </div>
+    <div class="social-media-links">
+        <a href="https://github.com/DSDigitalAgency/" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/company/dream-satisfy-digital-agency/" target="_blank">Linkedin</a>
+        <a href="https://www.instagram.com/dreamsatisfydigitalagency/" target="_blank">Instagram</a>
+        <a href="https://dsdigitalagency.github.io/" target="_blank">DSDA</a>
+    </div>
+    <div class="image-left"></div>
+    <div class="image-right"></div>
+    <script src="script.js"></script>
+    <audio controls autoplay loop>
+        <source src="assets/bg-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+</body>
+
+</html>

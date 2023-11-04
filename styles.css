@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-repeat: repeat-y; /* Repeat vertically */
+    background-position: center; /* Center the background image */
+    font-family: 'Permanent Marker', cursive;
+}
+
+.game-name {
+    position: fixed;
+    top: 20px; /* Adjust the top spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.start-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    z-index: 2;
+}
+
+.start-screen h1 {
+    font-size: 46px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(245, 129, 129, 0.5);
+}
+
+.start-screen p {
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(129, 245, 220, 0.5)
+}
+
+.game-container {
+    width: 75vw;
+    height: 75vh;
+    margin: 10vh auto;
+    position: relative;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #813BCF, #7ED957);
+    border-image-slice: 1;
+    overflow: hidden;
+    background: url('assets/game-bg.jpg') no-repeat center bottom/cover;
+    position: relative;
+}
+
+.game-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.image-left,
+.image-right {
+    width: 12%;
+    height: 100vh;
+    background: url('assets/banner.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+.image-left {
+    left: 0;
+}
+
+.image-right {
+    right: 0;
+}
+
+.player,
+.enemy {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player {
+    background: url('assets/player.png') no-repeat center center/cover;
+    position: absolute;
+    left: 10px; /* Position the player at the left end of the screen */
+    bottom: 50%; /* Start the player at the vertical center of the screen */
+    transform: translateY(50%);
+}
+
+.enemy {
+    width: 80px; /* Adjust the width of the enemy element */
+    height: 80px; /* Adjust the height of the enemy element */
+    background: url('assets/enemy.png') no-repeat center center/cover; /* Set the background image for the enemy */
+    position: absolute;
+    top: 0; /* Initial top position of the enemy */
+    left: 100vw; /* Initial left position of the enemy, outside the screen */
+    transform: rotate(180deg);
+}
+
+.game-container .score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.social-media-links {
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.social-media-links a {
+    margin: 0 10px; /* Adjust the horizontal spacing between links as needed */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: 200ms;
+}
+
+.social-media-links a:hover {
+    color: #000000;
+    font-size: 25px;
+}
+
+.game-over-screen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.game-over-screen h1 {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.game-over-screen button {
+    background-color: #91eb94;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.game-over-screen button:hover {
+    background-color: #45a049;
+    color: white;
+}
