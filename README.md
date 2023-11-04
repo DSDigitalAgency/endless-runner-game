@@ -31,7 +31,7 @@ To run the game locally, you need a web browser.
 
 ## Play Online
 
-Play the game online: [Endless Runner Game](https://dreamsatisfydigitalagency.github.io/endless-runner-game/)
+Play the game online: [Endless Runner Game](https://dsdigitalagency.github.io/endless-runner-game/)
 
 ## Features
 
@@ -50,5 +50,5 @@ This project is open source, and contributions are welcome. Feel free to add new
 
 ## Authors
 
-- Kalyan - *Initial work* - [DreamSatisfyDigitalAgency](https://github.com/DreamSatisfyDigitalAgency)
+- Kalyan - *Initial work* - [DreamSatisfyDigitalAgency](https://github.com/DSDigitalAgency)
 
