@@ -15,7 +15,7 @@ To run the game locally, you need a web browser.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/DreamSatisfyDigitalAgency/endless-runner-game.git
+   git clone https://github.com/DSDigitalAgency/endless-runner-game.git
    ```
 2. Open `index.html` in your web browser.
 
