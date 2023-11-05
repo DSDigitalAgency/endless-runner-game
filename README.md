@@ -1,8 +1,3 @@
-# endless-runner-game
-
-Certainly! Here's the updated version of the README file, which includes information about the game being open source and a link to play it online:
-
----
 
 # Endless Runner Game
 
