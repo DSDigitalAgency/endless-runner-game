@@ -159,8 +159,8 @@ restartButton.addEventListener('click', function() {
         spawnEnemy();
         updateScore();
         gameLoop();
+
         
-        // Redirect to the desired URL
-        window.location.href = 'https://dsdigitalagency.github.io/endless-runner-game/'; // Replace 'https://example.com' with your desired URL
+        window.location.href = 'https://dsdigitalagency.github.io/endless-runner-game/'; 
     }
 });
