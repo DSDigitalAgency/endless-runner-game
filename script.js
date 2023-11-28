@@ -161,6 +161,6 @@ restartButton.addEventListener('click', function() {
         gameLoop();
         
         // Redirect to the desired URL
-        window.location.href = '/index.html'; // Replace 'https://example.com' with your desired URL
+        window.location.href = 'https://dsdigitalagency.github.io/endless-runner-game/'; // Replace 'https://example.com' with your desired URL
     }
 });
